@@ -71,6 +71,12 @@
     margin: 5px;
 }
 
+.cartao-pokemon .cartao-informacoes .habilidades,
+.cartao-pokemon .cartao-informacoes .status {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
 .cartao-pokemon.aberto {
     display: block;
 }
