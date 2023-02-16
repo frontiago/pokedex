@@ -5,4 +5,4 @@ Click on the buttons and see the status and habilities for each pokemon.
 
 ### 👁️ [View Online](https://frontiago.github.io/pokedex/)
 
-![Print](./print-pokedex.jpg)
+![Print](./src/images/print-pokedex.png)
