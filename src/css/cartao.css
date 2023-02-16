@@ -1,19 +1,19 @@
-.cartao-pokemon {
+.card-pokemon {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 20px;
     display: none;
     max-width: 430px;
 } 
 
-.cartao-pokemon .cartao-topo {
+.card-pokemon .card-top {
     padding: 30px 40px 0;
 }
 
-.cartao-pokemon .nome {
+.card-pokemon .name {
     margin-bottom: 5px;
 }
 
-.cartao-pokemon .tipo {
+.card-pokemon .type {
     font-size: 13px;
     background-color: #FFF;    
     opacity: 0.5;
@@ -22,28 +22,28 @@
     font-weight: bold;
 }
 
-.cartao-pokemon .detalhes {
+.card-pokemon .details {
     color: #FFF;
     display: flex;
     justify-content: space-between;
     align-items:center;
 }
 
-.cartao-pokemon .cartao-imagem {
+.card-pokemon .card-image {
     width: 350px;
     height: 350px;
 }
 
-.cartao-pokemon img {
+.card-pokemon img {
     height: 100%;
     transition: 0.25s ease-in-out;
 }
 
-.cartao-pokemon img:hover {
+.card-pokemon img:hover {
     transform: scale(1.10);
 }
 
-.cartao-pokemon .cartao-informacoes {
+.card-pokemon .card-info {
     background-color: #FFF;
     display: flex;
     justify-content: space-between;
@@ -53,34 +53,42 @@
     border-bottom-right-radius: 8px;
 }
 
-.cartao-pokemon .cartao-informacoes h3 {
+.card-pokemon .card-info h3 {
     font-size: 20px;
     font-family: 'Poppins';
     margin-bottom: 15px;
     border-bottom: 1px solid #6b727a;
 }
 
-.cartao-pokemon .status {
+.card-pokemon .status {
     display: flex; 
     flex-direction: column;
     font-size: 16px;
 }
 
-.cartao-pokemon .cartao-informacoes .habilidades ul li,
-.cartao-pokemon .cartao-informacoes .status ul li  {
-    border-bottom: 1px solid #c3c4c5;
-    padding: 0 0 5px;
-    margin: 5px;
-}
-
-.cartao-pokemon .cartao-informacoes .habilidades,
-.cartao-pokemon .cartao-informacoes .status {
+.card-pokemon .card-info .habilities,
+.card-pokemon .card-info .status {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
 
-.cartao-pokemon.aberto {
+.card-pokemon.opened {
     display: block;
+}
+
+.icons {
+    width: 15px;
+    height: 15px;
+}
+
+.status > ul > li {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+li.ability {
+    font-size: 15px;
 }
 
 .type-fire {

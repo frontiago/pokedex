@@ -1,9 +1,9 @@
-.listagem {
+.list-pokemons {
     max-width: 200px;
     display: flex;
 }
 
-.listagem .pokemon {
+.list-pokemons .pokemon {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,11 +19,11 @@
     transition: 0.25s ease-in-out;
 }
 
-.listagem .pokemon:hover {
+.list-pokemons .pokemon:hover {
     transform: scale(1.10);
 }
 
-.listagem .pokemon img {
+.list-pokemons .pokemon img {
     width: 25%;
     border-radius: 50%;
 }
@@ -32,6 +32,6 @@ li.pokemon span {
     font-family: 'Poppins';
 }
 
-.listagem .pokemon.ativo {
+.list-pokemons .pokemon.active {
     background-color: #fa6668;
 }

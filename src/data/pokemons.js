@@ -12,7 +12,7 @@ export const pokemonsData = [
             speed: 600,
             total: 1700
         },
-        habilities: ['Choque do trovão', 'Cabeçada']
+        abilities: ['Lightning Rod', 'Static']
     },
     {
         id: '001',
@@ -27,7 +27,7 @@ export const pokemonsData = [
             speed: 400,
             total: 1500
         },
-        habilities: ['Chicote de cipó', 'Crescimento', 'Clorofila']
+        abilities: ['Overgrow', 'Chlorophyll']
     },
     {
         id: '007',
@@ -42,7 +42,7 @@ export const pokemonsData = [
             speed: 250,
             total: 1950
         },
-        habilities: ['Jato de água', 'Giro rápido', 'Dança da chuva']
+        abilities: ['Torrent', 'Rain Dish']
     },
     {
         id: '004',
@@ -57,7 +57,7 @@ export const pokemonsData = [
             speed: 400,
             total: 2000
         },
-        habilities: ['Bola de fogo', 'Respiração de fogo']
+        abilities: ['Blaze', 'Sola Power']
     },
     {
         id: '130',
@@ -72,7 +72,7 @@ export const pokemonsData = [
             speed: 1300,
             total: 4600
         },
-        habilities: ['Intimidação', 'Cabeçada', 'Ataque giratório', 'Moxie']
+        abilities: ['Intimidate', 'Spinning', 'Moxie']
     },
     {
         id: '094',
@@ -87,7 +87,7 @@ export const pokemonsData = [
             speed: 850,
             total: 3450
         },
-        habilities: ['Se enconder nas sombras', 'Absorção de calor', 'Lançar maldições']
+        abilities: ['Hide in the shadows', 'Heat absortion', 'Cursed Body']
     },
     {
         id: '149',
@@ -102,7 +102,7 @@ export const pokemonsData = [
             speed: 1500,
             total: 9000
         },
-        habilities: ['Ataque intensificado', 'Escama maravilhosa', 'Multi-escamas', 'Twister']
+        abilities: ['Focus', 'Multiscale', 'Focus punch']
     },
     {
         id: '016',
@@ -117,6 +117,6 @@ export const pokemonsData = [
             speed: 2000,
             total: 5300
         },
-        habilities: ['Rajada de vento', 'Ataque com asas', 'Bicada', 'Ataque de areia']
+        abilities: ['Keen eyes', 'Tangled feet', 'Big pecks']
     }
 ]

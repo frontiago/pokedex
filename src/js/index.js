@@ -1,42 +1,59 @@
 import {pokemonsData} from '../data/pokemons.js'
 
-const divPokemonCards = document.querySelector('.cartoes-pokemon')
+const divPokemonCards = document.querySelector('.cards-pokemon')
 
 pokemonsData.map((pokemon) => {
 
     const templateCardPokemon = `
-    <div class="cartao-pokemon type-${pokemon.type}" id="cartao-${pokemon.name.toLowerCase()}">
+    <div class="card-pokemon type-${pokemon.type}" id="card-${pokemon.name.toLowerCase()}">
 
-        <div class="cartao-topo">
-            <div class="detalhes">
-                <h2 class="nome"> ${pokemon.name} </h2>
+        <div class="card-top">
+            <div class="details">
+                <h2 class="name"> ${pokemon.name} </h2>
                 <span> #${pokemon.id} </span>
             </div>
-            <span class="tipo"> ${pokemon.type} </span>
-            <div class="cartao-imagem">
+            <span class="type"> ${pokemon.type} </span>
+            <div class="card-image">
                 <img src=${pokemon.imageBig} alt=${pokemon.name} />
             </div>
         </div>
 
-        <div class="cartao-informacoes">
+        <div class="card-info">
             <div class="status">
                 <h3>Status</h3>
 
                 <ul>
-                    <li><strong>HP:</strong> ${pokemon.status.hp} </li>
-                    <li><strong>Attack:</strong> ${pokemon.status.attack} </li>
-                    <li><strong>Defense:</strong> ${pokemon.status.defense} </li>
-                    <li><strong>Speed:</strong> ${pokemon.status.speed} </li>
-                    <li><strong>Total:</strong> ${pokemon.status.total} </li>
+                    <li>
+                        <img src="src/images/icons/icon-hp.png" alt="icon heart" class="icons"> 
+                        <strong>HP:</strong> ${pokemon.status.hp} 
+                    </li>
+                    <li>
+                        <img src="src/images/icons/icon-attack.png" alt="icon heart" class="icons"> 
+                        <strong>Attack:</strong> ${pokemon.status.attack}
+                    </li>
+                    <li>
+                        <img src="src/images/icons/icon-defense.png" alt="icon heart" class="icons"> 
+                        <strong>Defense:</strong> ${pokemon.status.defense}
+                    </li>
+                    <li>
+                        <img src="src/images/icons/icon-speed.png" alt="icon heart" class="icons"> 
+                        <strong>Speed:</strong> ${pokemon.status.speed}
+                    </li>
+                    <li>
+                        <img src="src/images/icons/icon-total.png" alt="icon heart" class="icons"> 
+                        <strong>Total:</strong> ${pokemon.status.total}
+                    </li>
                 </ul>
             </div>
 
-            <div class="habilidades">   
-                <h3>Habilidades</h3>
+            <div class="abilities">   
+                <h3>Abilities</h3>
                 <ul>
-                    ${pokemon.habilities.map(hability => (
-                        '- ' + hability + '<br />'
-                    )).join('')}
+                    <li class="ability">
+                        ${pokemon.abilities.map(ability => (
+                            '- ' + ability + '<br />'
+                        )).join('')}
+                    </li>
                 </ul>
             </div>
 
@@ -46,22 +63,21 @@ pokemonsData.map((pokemon) => {
 
 })
 
-const pokemonsCard = document.querySelectorAll('.cartao-pokemon')
-const listaSelecaoPokemon = document.querySelectorAll('.pokemon')
+const pokemonList = document.querySelectorAll('.pokemon')
 
-listaSelecaoPokemon.forEach(pokemon => {
+pokemonList.forEach(pokemon => {
     pokemon.addEventListener('click', () => {
-        const idPokemonSelecionado = pokemon.attributes.id.value
-        const cartaoAberto = document.querySelector('.aberto')
-        const cartaoParaAbrir = document.getElementById(`cartao-${idPokemonSelecionado}`)
+        const idSelectedPokemon = pokemon.attributes.id.value
+        const cardOpened = document.querySelector('.opened')
+        const cardToOpen = document.getElementById(`card-${idSelectedPokemon}`)
 
-        cartaoAberto.classList.remove('aberto')
-        cartaoParaAbrir.classList.add('aberto')
+        cardOpened.classList.remove('opened')
+        cardToOpen.classList.add('opened')
 
-        const pokemonAtivoNaLista = document.querySelector('.ativo')
-        const pokemonSelecionadoNaListagem = document.getElementById(idPokemonSelecionado)
+        const ActivePokemonOnTheList = document.querySelector('.active')
+        const selectedPokemonOnTheList = document.getElementById(idSelectedPokemon)
         
-        pokemonAtivoNaLista.classList.remove('ativo')
-        pokemonSelecionadoNaListagem.classList.add('ativo')
+        ActivePokemonOnTheList.classList.remove('active')
+        selectedPokemonOnTheList.classList.add('active')
     })
 })
