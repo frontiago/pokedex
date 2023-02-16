@@ -1,7 +1,7 @@
 ## Pokedex 
 Pokedex using Html, CSS and Javascript.
 
-Click at the buttons and see the status and habilities for each pokemon.
+Click on the buttons and see the status and habilities for each pokemon.
 
 ### 👁️ [View Online](https://frontiago.github.io/pokedex/)
 

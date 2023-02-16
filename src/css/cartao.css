@@ -2,6 +2,7 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 20px;
     display: none;
+    max-width: 430px;
 } 
 
 .cartao-pokemon .cartao-topo {
@@ -13,11 +14,12 @@
 }
 
 .cartao-pokemon .tipo {
-    font-size: 12px;
+    font-size: 13px;
     background-color: #FFF;    
-    opacity: 0.7;
+    opacity: 0.5;
     border-radius: 10px; 
     padding: 2px 10px;
+    font-weight: bold;
 }
 
 .cartao-pokemon .detalhes {
@@ -81,30 +83,30 @@
     display: block;
 }
 
-.tipo-fogo {
+.type-fire {
     background-color: #ed8a8b;
 }
 
-.tipo-eletrico {
+.type-electric {
     background-color: #fcc719;
 }
 
-.tipo-agua {
+.type-water {
     background-color: #76befe;
 }
 
-.tipo-grama {
+.type-grass {
     background-color: #49d0b0;
 }
 
-.tipo-trevas {
+.type-darkness {
     background-color: #ba68c8;
 }
 
-.tipo-dragao {
+.type-dragon {
     background-color: #c29791;
 }
 
-.tipo-passaro {
+.type-bird {
     background-color: #a8a878;
 }
